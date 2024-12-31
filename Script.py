@@ -14,8 +14,8 @@ CLONE_START_TXT = """<b>Hᴇʟʟᴏ {},ᴍʏ ɴᴀᴍᴇ {},【ɪ ᴀᴍ ʟᴀ�
 ɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴛʜɪs ғᴇᴀᴛᴜʀᴇ ᴛʜᴇɴ ᴄʀᴇᴀᴛᴇ ʏᴏᴜʀ ᴏᴡɴ ᴄʟᴏɴᴇ ʙᴏᴛ ғʀᴏᴍ ᴍʏ <a href=https://t.me/vj_botz>ᴘᴀʀᴇɴᴛ</a></b>"""
 
     ABOUT_TXT = """<b><blockquote>I am Parmanent File Store Bot you can share your videos or files and get shareable link</blockquote>
-🧑🏻‍💻 <i>Devloper:</i> <a href=https://t.me/Only_botsz>𝕆𝕟𝕝𝕪 𝔹𝕠𝕥𝕤𝕫</a></b>
-"""
+
+🧑🏻‍💻 <i>Devloper:</i> <a href=https://t.me/Only_botsz>𝕆𝕟𝕝𝕪 𝔹𝕠𝕥𝕤𝕫</a></b>"""
 #👥 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ: <a href=https://t.me/VJ_Bot_Disscussion>𝐕𝐉 𝐒𝐮𝐩𝐩𝐨𝐫𝐭</a>
 
 #📢 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ: <a href=https://t.me/vj_botz>𝐕𝐉 𝐔𝐩𝐝𝐚𝐭𝐞</a></b>
