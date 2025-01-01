@@ -13,8 +13,7 @@ CLONE_START_TXT = """<b>Hᴇʟʟᴏ {},ᴍʏ ɴᴀᴍᴇ {},【ɪ ᴀᴍ ʟᴀ�
 
 ɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴛʜɪs ғᴇᴀᴛᴜʀᴇ ᴛʜᴇɴ ᴄʀᴇᴀᴛᴇ ʏᴏᴜʀ ᴏᴡɴ ᴄʟᴏɴᴇ ʙᴏᴛ ғʀᴏᴍ ᴍʏ <a href=https://t.me/vj_botz>ᴘᴀʀᴇɴᴛ</a></b>"""
 
-    ABOUT_TXT = """<b><blockquote><i> Purpose of My: I am Parmanent File Store Bot,
-    you can share your videos or files and get shareable link </i></blockquote>
+    ABOUT_TXT = """<b><blockquote><i>📌 Purpose of My: I am Parmanent File Store Bot,you can share your videos or files and get shareable link </i></blockquote>
     
     <i>🤖 ᴍʏ ɴᴀᴍᴇ: {}
     
