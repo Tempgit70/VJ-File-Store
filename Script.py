@@ -9,7 +9,7 @@ class script(object):
 
 ʜɪ ɪ ᴀᴍ ꜰɪʟᴇ ꜱᴛᴏʀᴇ ᴡɪᴛʜ ᴀᴍᴀᴢɪɴɢ ꜰᴇᴀᴛᴜʀᴇꜱ ʏᴏᴜ ᴄᴀɴ ᴜꜱᴇ ᴍᴇ ꜰᴏʀ ʏᴏᴜʀ ᴘᴜʀᴘᴏꜱᴇ.</blockquote>
 
-    👨‍💻 ᴍᴀɴᴀɢᴇᴅ ʙʏ: <a href=https://t.me/only_botx>𝐨𝐧ℓ𝕐 вσ丅᙭</a></i></b>"""
+👨‍💻 ᴍᴀɴᴀɢᴇᴅ ʙʏ: <a href=https://t.me/only_botx>𝐨𝐧ℓ𝕐 вσ丅᙭</a></i></b>"""
     
 # Don't Remove Credit Tg - @VJ_Botz
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
@@ -129,6 +129,27 @@ For File store bot
 🛠️ Bᴜɪʟᴅ Sᴛᴀᴛᴜs: <code>v2.7.1 [ Sᴛᴀʙʟᴇ ]</code></b>
 File store bot"""
 
+PREMIUM_TXT = """𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐓𝐨 𝐊𝐚𝐯𝐲𝐚𝐚 𝐓𝐡𝐚𝐩𝐩𝐚𝐫 𝐏𝐫𝐞𝐦𝐢𝐮𝐦 𝐙𝐨𝐧𝐞🔥
+
+Bᴇɴᴇғɪᴛs ᴏғ ʙᴜʏɪɴɢ ᴏᴜʀ ᴘʀᴇᴍɪᴜᴍ ᴘʟᴀɴs:
+
+⇒ Nᴏ ɴᴇᴇᴅ ᴛᴏ ᴏᴘᴇɴ Sʜᴏʀᴛʟɪɴᴋ ᴏʀ ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ.
+⇒ Gᴇᴛ Dɪʀᴇᴄᴛ Fɪʟᴇs ғʀᴏᴍ ᴏᴜʀ ʙᴏᴛ Oʀ Cʜᴀɴɴᴇʟ.
+⇒ ɢᴇᴛ ᴄʜᴀɴɴᴇʟ ᴏꜰ ᴅᴀɪʟʏ ᴍᴏᴠɪᴇ ᴀɴᴅ ꜱᴇʀɪᴇꜱ ᴜᴘʟᴏᴀᴅ. 
+#1st_on_Telegram
+⇒ ɢᴇᴛ ʀᴇQᴜᴇꜱᴛ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ ᴡɪᴛʜ 3 ᴍɪʟʟɪᴏɴ+ ꜰɪʟᴇꜱ ᴡɪᴛʜ ɴᴇᴡ ᴍᴏᴠɪᴇꜱ.
+⇒ Aᴄᴄᴇss ᴛᴏ Exᴄʟᴜsɪᴠᴇ ғᴇᴀᴛᴜʀᴇs.
+⇒ 24x7 Aᴅᴍɪɴ Sᴜᴘᴘᴏʀᴛ.
+
+Hᴇʀᴇ ᴀʀᴇ ᴛʜᴇ sᴘᴇᴄɪᴀʟ ᴘʟᴀɴs ғᴏʀ ʏᴏᴜ:
+
+※ ₹50/- | Vᴀʟɪᴅɪᴛʏ: 15 Dᴀʏ
+※ ₹100/- | Vᴀʟɪᴅɪᴛʏ: 30 Dᴀʏs
+※ ₹150/- | Vᴀʟɪᴅɪᴛʏ: 2 Mᴏɴᴛʜs
+※ ₹200/- | Vᴀʟɪᴅɪᴛʏ: 3 Mᴏɴᴛʜs
+※ ₹250/- | Vᴀʟɪᴅɪᴛʏ: 4 Mᴏɴᴛʜs
+※ ₹500/- | Vᴀʟɪᴅɪᴛʏ: 1 Yᴇᴀʀ
+"""
 # Don't Remove Credit Tg - @VJ_Botz
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
 # Ask Doubt on telegram @KingVJ01
