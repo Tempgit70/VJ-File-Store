@@ -4,11 +4,12 @@
 
 
 class script(object):
-    START_TXT = """<b>Hᴇʟʟᴏ {},
+    START_TXT = """<b><i>ʜᴇʟʟᴏ ʙᴀʙʏ {} 😍,
     
-    </blockquote>ᴍʏ ɴᴀᴍᴇ {},ʜɪ ɪ ᴀᴍ ꜰɪʟᴇ ꜱᴛᴏʀᴇ ᴡɪᴛʜ ᴀᴍᴀᴢɪɴɢ ʏᴏᴜ ᴄᴀɴ ᴜꜱᴇ ᴍᴇ ꜰᴏʀ ʏᴏᴜʀ ᴘᴜʀᴘᴏꜱᴇ.</blockquote>
+    <blockquote>ᴍʏ ɴᴀᴍᴇ {},
+    ʜɪ ɪ ᴀᴍ ꜰɪʟᴇ ꜱᴛᴏʀᴇ ᴡɪᴛʜ ᴀᴍᴀᴢɪɴɢ ʏᴏᴜ ᴄᴀɴ ᴜꜱᴇ ᴍᴇ ꜰᴏʀ ʏᴏᴜʀ ᴘᴜʀᴘᴏꜱᴇ.</blockquote>
 
-    👨‍💻 ᴍᴀɴᴀɢᴇᴅ ʙʏ: <a href=https://t.me/only_botx>𝐨𝐧ℓ𝕐 вσ丅᙭</a></b>"""
+    👨‍💻 ᴍᴀɴᴀɢᴇᴅ ʙʏ: <a href=https://t.me/only_botx>𝐨𝐧ℓ𝕐 вσ丅᙭</a></i></b>"""
     
 # Don't Remove Credit Tg - @VJ_Botz
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
