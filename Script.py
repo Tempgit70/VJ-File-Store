@@ -16,9 +16,9 @@ class script(object):
 # Ask Doubt on telegram @KingVJ01
 
     
-    CAPTION = """<b><blockquote> {file_name} </blockqoute>
+    CAPTION = """<b><i><blockquote> {file_name} </blockqoute>
     
-Jᴏɪɴ [ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ] #add link soon </b>""" 
+Jᴏɪɴ [ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ] #add link soon</i></b>""" 
 
 # Don't Remove Credit Tg - @VJ_Botz
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
@@ -79,7 +79,7 @@ First Send /clone command then follow below steps.
 
     HELP_TXT = """<b><i>💢 Hᴏᴡ Tᴏ Usᴇ Tʜɪs Bᴏᴛ ☺️
 
-🔻 /link - ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴠɪᴅᴇᴏ ᴏʀ ғɪʟᴇ ᴛᴏ ɢᴇᴛ sʜᴀʀᴀʙʟᴇ ʟɪɴᴋ
+</blockquote>🔻 /link - ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴠɪᴅᴇᴏ ᴏʀ ғɪʟᴇ ᴛᴏ ɢᴇᴛ sʜᴀʀᴀʙʟᴇ ʟɪɴᴋ
 
 🔻 /batch - sᴇɴᴅ ғɪʀsᴛ ʟɪɴᴋ ᴏғ ғɪʟᴇ sᴛᴏʀᴇ ᴄʜᴀɴɴᴇʟ ᴘᴏsᴛ ᴛʜᴇɴ ʟᴀsᴛ ᴘᴏsᴛ ʟɪɴᴋ ᴀɴᴅ ᴍᴀᴋᴇ sᴜʀᴇ ʙᴏᴛ ɪs ᴀᴅᴍɪɴ ɪɴ ʏᴏᴜʀ ғɪʟᴇ sᴛᴏʀᴇ ᴄʜᴀɴɴᴇʟ.
 ᴇx - /batch https://t.me/12345/25 https://t.me/12345/30
@@ -90,7 +90,7 @@ First Send /clone command then follow below steps.
 🔻 /api - sᴇᴛ ʏᴏᴜʀ ᴜʀʟ sʜᴏʀᴛɴᴇʀ ᴀᴄᴄᴏᴜɴᴛ ᴀᴘɪ 
 ᴇx - /api ugfhiguf586IgjgdaD
 
-🔻 /broadcast - ʀᴇᴘʟʏ ᴛᴏ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ ᴛᴏ ʙʀᴏᴀᴅᴄᴀsᴛ (ʙᴏᴛ ᴏᴡɴᴇʀ ᴏɴʟʏ)</blockquote></b>"""
+🔻 /broadcast - ʀᴇᴘʟʏ ᴛᴏ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ ᴛᴏ ʙʀᴏᴀᴅᴄᴀsᴛ (ʙᴏᴛ ᴏᴡɴᴇʀ ᴏɴʟʏ)</blockquote></i></b>"""
 
 # Don't Remove Credit Tg - @VJ_Botz
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
@@ -113,25 +113,25 @@ First Send /clone command then follow below steps.
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
 # Ask Doubt on telegram @KingVJ01
 
-    LOG_TEXT = """<b>#NewUser
+    LOG_TEXT = """<b><i>#NewUser
     
 ID - <code>{}</code>
 
 Nᴀᴍᴇ - {}</b>
-For File store bot 
+For File store bot</i> 
 """
     RESTART_TXT = """
-<b>Bᴏᴛ Rᴇsᴛᴀʀᴛᴇᴅ !
+<b><i>Bᴏᴛ Rᴇsᴛᴀʀᴛᴇᴅ !
 
 📅 Dᴀᴛᴇ : <code>{}</code>
 ⏰ Tɪᴍᴇ : <code>{}</code>
 🌐 Tɪᴍᴇᴢᴏɴᴇ : <code>Asia/Kolkata</code>
 🛠️ Bᴜɪʟᴅ Sᴛᴀᴛᴜs: <code>v2.7.1 [ Sᴛᴀʙʟᴇ ]</code></b>
-File store bot"""
+File store bot</i>"""
 
 PREMIUM_TXT = """𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐓𝐨 𝐊𝐚𝐯𝐲𝐚𝐚 𝐓𝐡𝐚𝐩𝐩𝐚𝐫 𝐏𝐫𝐞𝐦𝐢𝐮𝐦 𝐙𝐨𝐧𝐞🔥
 
-Bᴇɴᴇғɪᴛs ᴏғ ʙᴜʏɪɴɢ ᴏᴜʀ ᴘʀᴇᴍɪᴜᴍ ᴘʟᴀɴs:
+<b><i>Bᴇɴᴇғɪᴛs ᴏғ ʙᴜʏɪɴɢ ᴏᴜʀ ᴘʀᴇᴍɪᴜᴍ ᴘʟᴀɴs:
 
 ⇒ Nᴏ ɴᴇᴇᴅ ᴛᴏ ᴏᴘᴇɴ Sʜᴏʀᴛʟɪɴᴋ ᴏʀ ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ.
 ⇒ Gᴇᴛ Dɪʀᴇᴄᴛ Fɪʟᴇs ғʀᴏᴍ ᴏᴜʀ ʙᴏᴛ Oʀ Cʜᴀɴɴᴇʟ.
@@ -148,8 +148,8 @@ Hᴇʀᴇ ᴀʀᴇ ᴛʜᴇ sᴘᴇᴄɪᴀʟ ᴘʟᴀɴs ғᴏʀ ʏᴏᴜ:
 ※ ₹150/- | Vᴀʟɪᴅɪᴛʏ: 2 Mᴏɴᴛʜs
 ※ ₹200/- | Vᴀʟɪᴅɪᴛʏ: 3 Mᴏɴᴛʜs
 ※ ₹250/- | Vᴀʟɪᴅɪᴛʏ: 4 Mᴏɴᴛʜs
-※ ₹500/- | Vᴀʟɪᴅɪᴛʏ: 1 Yᴇᴀʀ
-"""
+※ ₹500/- | Vᴀʟɪᴅɪᴛʏ: 1 Yᴇᴀʀ</i></b>"""
+
 # Don't Remove Credit Tg - @VJ_Botz
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
 # Ask Doubt on telegram @KingVJ01
