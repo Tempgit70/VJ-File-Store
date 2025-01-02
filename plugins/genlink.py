@@ -50,7 +50,7 @@ async def incoming_gen_link(bot, message):
         short_link = await get_short_link(user, share_link)
         await message.reply(f"<b>⭕ ʜᴇʀᴇ ɪs ʏᴏᴜʀ ʟɪɴᴋ:\n\n🖇️ sʜᴏʀᴛ ʟɪɴᴋ :- {short_link}</b>")
     else:
-        await message.reply(f"<b>⭕ ʜᴇʀᴇ ɪs ʏᴏᴜʀ ʟɪɴᴋ:\n\n🔗 ᴏʀɪɢɪɴᴀʟ ʟɪɴᴋ :- {share_link}</b>")
+        await message.reply(f"<b><blockquote> ʜᴇʀᴇ ɪs ʏᴏᴜʀ ʟɪɴᴋ:- {share_link}</blockquote></b>")
         
 
 @Client.on_message(filters.command(['link', 'plink']) & filters.create(allowed))
@@ -61,7 +61,7 @@ async def gen_link_s(bot, message):
         return await message.reply('Reply to a message to get a shareable link.')
     file_type = replied.media
     if file_type not in [enums.MessageMediaType.VIDEO, enums.MessageMediaType.AUDIO, enums.MessageMediaType.DOCUMENT]:
-        return await message.reply("**ʀᴇᴘʟʏ ᴛᴏ ᴀ sᴜᴘᴘᴏʀᴛᴇᴅ ᴍᴇᴅɪᴀ**")
+        return await message.reply("**ʀᴇᴘʟʏ ᴛᴏ ᴀ sᴜᴘᴘᴏʀᴛᴇᴅ ᴍᴇᴅɪᴀ ok**")
     if message.has_protected_content and message.chat.id not in ADMINS:
         return await message.reply("okDa")
 
@@ -83,7 +83,7 @@ async def gen_link_s(bot, message):
         short_link = await get_short_link(user, share_link)
         await message.reply(f"<b>⭕ ʜᴇʀᴇ ɪs ʏᴏᴜʀ ʟɪɴᴋ:\n\n🖇️ sʜᴏʀᴛ ʟɪɴᴋ :- {short_link}</b>")
     else:
-        await message.reply(f"<b>⭕ ʜᴇʀᴇ ɪs ʏᴏᴜʀ ʟɪɴᴋ:\n\n🔗 ᴏʀɪɢɪɴᴀʟ ʟɪɴᴋ :- {share_link}</b>")
+        await message.reply(f"<b><blockquote> ʜᴇʀᴇ ɪs ʏᴏᴜʀ ʟɪɴᴋ :- {share_link}</blockquote></b>")
         
 
 # Don't Remove Credit Tg - @VJ_Botz
@@ -94,10 +94,10 @@ async def gen_link_s(bot, message):
 async def gen_link_batch(bot, message):
     username = (await bot.get_me()).username
     if " " not in message.text:
-        return await message.reply("Use correct format.\nExample /batch https://t.me/vj_botz/10 https://t.me/vj_botz/20.")
+        return await message.reply("Use correct format.\nExample /batch https://t.me/12345/10 https://t.me/12345/20.")
     links = message.text.strip().split(" ")
     if len(links) != 3:
-        return await message.reply("Use correct format.\nExample /batch https://t.me/vj_botz/10 https://t.me/vj_botz/20.")
+        return await message.reply("Use correct format.\nExample /batch https://t.me/vj_botz/10 https://t.me/12345/20.")
     cmd, first, last = links
     regex = re.compile("(https://)?(t\.me/|telegram\.me/|telegram\.dog/)(c/)?(\d+|[a-zA-Z_0-9]+)/(\d+)$")
     match = regex.match(first)
@@ -191,7 +191,7 @@ async def gen_link_batch(bot, message):
     user_id = message.from_user.id
     user = await get_user(user_id)
     if WEBSITE_URL_MODE == True:
-        share_link = f"{WEBSITE_URL}?Tech_VJ=BATCH-{file_id}"
+        share_link = f"{WEBSITE_URL}?only_botx=BATCH-{file_id}"
     else:
         share_link = f"https://t.me/{username}?start=BATCH-{file_id}"
     if user["base_site"] and user["shortener_api"] != None:
