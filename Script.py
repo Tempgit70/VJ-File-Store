@@ -13,11 +13,12 @@ CLONE_START_TXT = """<b>Hᴇʟʟᴏ {},ᴍʏ ɴᴀᴍᴇ {},【ɪ ᴀᴍ ʟᴀ�
 
 ɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴛʜɪs ғᴇᴀᴛᴜʀᴇ ᴛʜᴇɴ ᴄʀᴇᴀᴛᴇ ʏᴏᴜʀ ᴏᴡɴ ᴄʟᴏɴᴇ ʙᴏᴛ ғʀᴏᴍ ᴍʏ <a href=https://t.me/vj_botz>ᴘᴀʀᴇɴᴛ</a></b>"""
 
-    ABOUT_TXT = """<b><blockquote><i>📌 Purpose of My: I am Parmanent File Store Bot,you can share your videos or files and get shareable link </i></blockquote>
-    
-    <i>🤖 ᴍʏ ɴᴀᴍᴇ: {}
-    
-    🧑🏻‍💻 Devloper: <a href=https://t.me/Only_botsz>𝕆𝕟𝕝𝕪 𝔹𝕠𝕥𝕤𝕫</a></i></b>"""
+    ABOUT_TXT = """<b><blockquote>✨ ʜɪ ɪ ᴀᴍ ꜰɪʟᴇ ꜱᴛᴏʀᴇ ᴡɪᴛʜ ᴀᴍᴀᴢɪɴɢ ʏᴏᴜ ᴄᴀɴ ᴜꜱᴇ ᴍᴇ ꜰᴏʀ ʏᴏᴜʀ ᴘᴜʀᴘᴏꜱᴇ.⭐</blockquote>
+
+🤖 ᴍʏ ɴᴀᴍᴇ: {}
+
+🧑🏻‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ: <a href=https://t.me/Only_botx>𝐨𝐧ℓ𝕐 вσ丅᙭</a></b>
+"""
 #👥 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ: <a href=https://t.me/VJ_Bot_Disscussion>𝐕𝐉 𝐒𝐮𝐩𝐩𝐨𝐫𝐭</a>
 
 #📢 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ: <a href=https://t.me/vj_botz>𝐕𝐉 𝐔𝐩𝐝𝐚𝐭𝐞</a></b>
