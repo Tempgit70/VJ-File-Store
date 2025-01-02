@@ -57,7 +57,7 @@ async def start(client, message):
             InlineKeyboardButton('✗ ʜᴇʟᴘ ✗', callback_data='help')
             ],[
             InlineKeyboardButton('◈ ᴜᴘᴅᴀᴛᴇꜱ ◈', url='https://t.me/magic_botz'),
-            InlineKeyboardButton('💸 ɢᴇᴛ ᴘʀᴇᴍɪᴜᴍ 💸', callback_data='PREMIUM_TXT')
+            InlineKeyboardButton('ᴍᴏᴠɪᴇꜱ ɢʀᴏᴜᴘ 🎥', url='https://t.me/+XlwpHPfxD8tmM2Vl')
         ]]
         if CLONE_MODE == True:
             buttons.append([InlineKeyboardButton('🤖 ᴄʀᴇᴀᴛᴇ ʏᴏᴜʀ ᴏᴡɴ ᴄʟᴏɴᴇ ʙᴏᴛ', callback_data='clone')])
