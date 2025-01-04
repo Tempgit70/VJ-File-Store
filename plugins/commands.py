@@ -91,7 +91,7 @@ async def start(client, message):
         is_valid = await check_token(client, userid, token)
         if is_valid == True:
             await message.reply_text(
-                text="<b>ʜᴇʏ ʙᴀʙʏ {message.from_user.mention} 😍,/n<blockquote>ʏᴏᴜ ᴀʀᴇ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ᴠᴇʀɪꜰɪᴇᴅ !⚡</blockquote> ɴᴏᴡ ʏᴏᴜ ʜᴀᴠᴇ ᴜɴʟɪᴍɪᴛᴇᴅ ᴀᴄᴄᴇꜱꜱ ꜰᴏʀ ᴀʟʟ ꜰɪʟᴇꜱ ᴛɪʟʟ ᴛᴏᴅᴀʏ ᴍɪᴅɴɪɢʜᴛ.</b>",
+                text="<b>ʜᴇʏ ʙᴀʙʏ {message.from_user.mention} 😍,/n<blockquote>ʏᴏᴜ ᴀʀᴇ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ᴠᴇʀɪꜰɪᴇᴅ !⚡</blockquote> /nɴᴏᴡ ʏᴏᴜ ʜᴀᴠᴇ ᴜɴʟɪᴍɪᴛᴇᴅ ᴀᴄᴄᴇꜱꜱ ꜰᴏʀ ᴀʟʟ ꜰɪʟᴇꜱ ᴛɪʟʟ ᴛᴏᴅᴀʏ ᴍɪᴅɴɪɢʜᴛ.</b>",
                 protect_content=True
             )
             await verify_user(client, userid, token)
@@ -408,7 +408,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('✗ ʜᴇʟᴘ ✗', callback_data='help')
             ],[
             InlineKeyboardButton('◈ ᴜᴘᴅᴀᴛᴇꜱ ◈', url='https://t.me/magic_botz'),
-            InlineKeyboardButton('〆 ᴍᴏᴠɪᴇꜱ ɢʀᴏᴜᴘ 〆', url='https://t.me/+XlwpHPfxD8tmM2Vl')
+            InlineKeyboardButton('ɢᴇᴛ ᴘʀᴇᴍɪᴜᴍ', callback_data='premium')
         ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
