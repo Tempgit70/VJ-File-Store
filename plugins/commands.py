@@ -381,7 +381,7 @@ async def base_site_handler(client, m: Message):
 async def cb_handler(client: Client, query: CallbackQuery):
     if query.data == "close_data":
         await query.message.delete()
-    elif query.data == "about":
+    elif query.data == "premium":
         buttons = [[
             InlineKeyboardButton('⇋ ʜᴏᴍᴇ ⇋', callback_data='start'),
             InlineKeyboardButton('⊗ ᴄʟᴏꜱᴇ ⊗', callback_data='close_data')
@@ -394,7 +394,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         me2 = (await client.get_me()).mention
         await query.message.edit_text(
-            text=script.ABOUT_TXT.format(me2),
+            text=script.PREMIUM_TXT.format(me2),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
@@ -465,28 +465,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )  
-
-    # Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
-    
-query.data == "premium":
-        buttons = [[
-            InlineKeyboardButton('⇋ ʜᴏᴍᴇ ⇋', callback_data='start'),
-            InlineKeyboardButton('⊗ ᴄʟᴏꜱᴇ ⊗', callback_data='close_data')
-        ]]
-        await client.edit_message_media(
-            query.message.chat.id, 
-            query.message.id, 
-            InputMediaPhoto(random.choice(PICS))
-        )
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.PREMIUM_TXT,
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-
+        
 # Don't Remove Credit Tg - @VJ_Botz
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
 # Ask Doubt on telegram @KingVJ01
