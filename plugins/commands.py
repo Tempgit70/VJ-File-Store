@@ -124,7 +124,7 @@ async def start(client, message):
         sts = await message.reply("**🔺 ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ**")
         file_id = data.split("-", 1)[1]
         msgs = BATCH_FILES.get(file_id)
-        if not msgs: in 
+        if not msgs:
             file = await client.download_media(file_id)
             try: 
                 with open(file) as file_data:
