@@ -228,7 +228,8 @@ async def start(client, message):
                 ],[
                     InlineKeyboardButton("🌟 ᴛᴜᴛᴏʀɪᴀʟ 🌟", url=VERIFY_TUTORIAL)
                 ]]
-                await message.reply_text(
+                
+            await message.reply_text(
                     text="""<b><i>💢 ʏᴏᴜʀ ᴀᴅꜱ ᴛᴏᴋᴇɴ ɪꜱ ᴇxᴘɪʀᴇᴅ, ʀᴇꜰʀᴇꜱʜ ʏᴏᴜʀ ᴛᴏᴋᴇɴ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ.
                     ⏳ ᴛᴏᴋᴇɴ ᴛɪᴍᴇᴏᴜᴛ: 1 ᴅᴀʏ 
                     <blockquote>ᴡʜᴀᴛ ɪꜱ ᴛʜᴇ ᴛᴏᴋᴇɴ? 
