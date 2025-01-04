@@ -57,7 +57,7 @@ async def start(client, message):
             InlineKeyboardButton('✗ ʜᴇʟᴘ ✗', callback_data='help')
             ],[
             InlineKeyboardButton('◈ ᴜᴘᴅᴀᴛᴇꜱ ◈', url='https://t.me/magic_botz'),
-            InlineKeyboardButton('ɢᴇᴛ ᴘʀᴇᴍɪᴜᴍ', callback_data='premium')
+            InlineKeyboardButton('💸 ɢᴇᴛ ᴘʀᴇᴍɪᴜᴍ 💸', callback_data='premium')
         ]]
         if CLONE_MODE == True:
             buttons.append([InlineKeyboardButton('🤖 ᴄʀᴇᴀᴛᴇ ʏᴏᴜʀ ᴏᴡɴ ᴄʟᴏɴᴇ ʙᴏᴛ', callback_data='clone')])
@@ -91,25 +91,30 @@ async def start(client, message):
         is_valid = await check_token(client, userid, token)
         if is_valid == True:
             await message.reply_text(
-                text="<b>ʜᴇʏ ʙᴀʙʏ {message.from_user.mention} 😍,/n<blockquote>ʏᴏᴜ ᴀʀᴇ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ᴠᴇʀɪꜰɪᴇᴅ !⚡</blockquote> /nɴᴏᴡ ʏᴏᴜ ʜᴀᴠᴇ ᴜɴʟɪᴍɪᴛᴇᴅ ᴀᴄᴄᴇꜱꜱ ꜰᴏʀ ᴀʟʟ ꜰɪʟᴇꜱ ᴛɪʟʟ ᴛᴏᴅᴀʏ ᴍɪᴅɴɪɢʜᴛ.</b>",
+                text="<b>ʜᴇʏ ʙᴀʙʏ 😍,<blockquote>ʏᴏᴜ ᴀʀᴇ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ᴠᴇʀɪꜰɪᴇᴅ !⚡</blockquote> ɴᴏᴡ ʏᴏᴜ ʜᴀᴠᴇ ᴜɴʟɪᴍɪᴛᴇᴅ ᴀᴄᴄᴇꜱꜱ ꜰᴏʀ ᴀʟʟ ꜰɪʟᴇꜱ ᴛɪʟʟ ᴛᴏᴅᴀʏ ᴍɪᴅɴɪɢʜᴛ.</b>",
                 protect_content=True
             )
             await verify_user(client, userid, token)
         else:
             return await message.reply_text(
-                text="<b>ʜᴇʏ ʙᴀʙʏ 😎,/nᴍᴀʏ'ʙᴇ ʏᴏᴜʀ ʟɪɴᴋ ɪꜱ ᴇxᴘɪʀᴇᴅ ᴏʀ ɪɴᴠᴀʟɪᴅ ᴏʀ ᴇxᴘɪʀᴇᴅ.</b>",
+                text="<b>ʜᴇʏ ʙᴀʙʏ 😎, ᴍᴀʏ'ʙᴇ ʏᴏᴜʀ ʟɪɴᴋ ɪꜱ ᴇxᴘɪʀᴇᴅ ᴏʀ ɪɴᴠᴀʟɪᴅ ᴏʀ ᴇxᴘɪʀᴇᴅ.</b>",
                 protect_content=True
             )
     elif data.split("-", 1)[0] == "BATCH":
         try:
             if not await check_verification(client, message.from_user.id) and VERIFY_MODE == True:
                 btn = [[
-                    InlineKeyboardButton("Verify", url=await get_token(client, message.from_user.id, f"https://telegram.me/{username}?start="))
+                    InlineKeyboardButton("🪄 ɢᴇᴛ ʏᴏᴜʀ ᴛᴏᴋᴇɴ 🪄", url=await get_token(client, message.from_user.id, f"https://telegram.me/{username}?start="))
                 ],[
-                    InlineKeyboardButton("How To Open Link & Verify", url=VERIFY_TUTORIAL)
+                    InlineKeyboardButton("🌟 ᴛᴜᴛᴏʀɪᴀʟ 🌟", url=VERIFY_TUTORIAL)
                 ]]
                 await message.reply_text(
-                    text="<b>You are not verified !\nKindly verify to continue !</b>",
+                    text="""<b><i>💢 ʏᴏᴜʀ ᴀᴅꜱ ᴛᴏᴋᴇɴ ɪꜱ ᴇxᴘɪʀᴇᴅ, ʀᴇꜰʀᴇꜱʜ ʏᴏᴜʀ ᴛᴏᴋᴇɴ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ.
+                    ⏳ ᴛᴏᴋᴇɴ ᴛɪᴍᴇᴏᴜᴛ: 1 ᴅᴀʏ 
+                    <blockquote>ᴡʜᴀᴛ ɪꜱ ᴛʜᴇ ᴛᴏᴋᴇɴ? 
+                    ᴛʜɪꜱ ɪꜱ ᴀɴ ᴀᴅꜱ ᴛᴏᴋᴇɴ. ɪꜰ ʏᴏᴜ ᴘᴀꜱꜱ 1 ᴀᴅ, ʏᴏᴜ ᴄᴀɴ ᴜꜱᴇ ᴛʜᴇ ʙᴏᴛ ꜰᴏʀ 24 ʜᴏᴜʀ ᴀꜰᴛᴇʀ ᴘᴀꜱꜱɪɴɢ ᴛʜᴇ ᴀᴅ.</blockquote></i>
+                    
+                    ᴄʟɪᴄᴋ ᴏɴ "🪄 ɢᴇᴛ ʏᴏᴜʀ ᴛᴏᴋᴇɴ 🪄" ʙᴜᴛᴛᴏɴ ᴀᴄᴄᴇꜱꜱ ʏᴏᴜʀ ʟɪɴᴋ.</b>""",
                     protect_content=True,
                     reply_markup=InlineKeyboardMarkup(btn)
                 )
@@ -119,7 +124,7 @@ async def start(client, message):
         sts = await message.reply("**🔺 ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ**")
         file_id = data.split("-", 1)[1]
         msgs = BATCH_FILES.get(file_id)
-        if not msgs:
+        if not msgs: in 
             file = await client.download_media(file_id)
             try: 
                 with open(file) as file_data:
@@ -219,15 +224,20 @@ async def start(client, message):
         pre, file_id = ((base64.urlsafe_b64decode(data + "=" * (-len(data) % 4))).decode("ascii")).split("_", 1)
         if not await check_verification(client, message.from_user.id) and VERIFY_MODE == True:
             btn = [[
-                InlineKeyboardButton("Verify", url=await get_token(client, message.from_user.id, f"https://telegram.me/{username}?start="))
-            ],[
-                InlineKeyboardButton("How To Open Link & Verify", url=VERIFY_TUTORIAL)
-            ]]
-            await message.reply_text(
-                text="<b>You are not verified !\nKindly verify to continue !</b>",
-                protect_content=True,
-                reply_markup=InlineKeyboardMarkup(btn)
-            )
+                    InlineKeyboardButton("🪄 ɢᴇᴛ ʏᴏᴜʀ ᴛᴏᴋᴇɴ 🪄", url=await get_token(client, message.from_user.id, f"https://telegram.me/{username}?start="))
+                ],[
+                    InlineKeyboardButton("🌟 ᴛᴜᴛᴏʀɪᴀʟ 🌟", url=VERIFY_TUTORIAL)
+                ]]
+                await message.reply_text(
+                    text="""<b><i>💢 ʏᴏᴜʀ ᴀᴅꜱ ᴛᴏᴋᴇɴ ɪꜱ ᴇxᴘɪʀᴇᴅ, ʀᴇꜰʀᴇꜱʜ ʏᴏᴜʀ ᴛᴏᴋᴇɴ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ.
+                    ⏳ ᴛᴏᴋᴇɴ ᴛɪᴍᴇᴏᴜᴛ: 1 ᴅᴀʏ 
+                    <blockquote>ᴡʜᴀᴛ ɪꜱ ᴛʜᴇ ᴛᴏᴋᴇɴ? 
+                    ᴛʜɪꜱ ɪꜱ ᴀɴ ᴀᴅꜱ ᴛᴏᴋᴇɴ. ɪꜰ ʏᴏᴜ ᴘᴀꜱꜱ 1 ᴀᴅ, ʏᴏᴜ ᴄᴀɴ ᴜꜱᴇ ᴛʜᴇ ʙᴏᴛ ꜰᴏʀ 24 ʜᴏᴜʀ ᴀꜰᴛᴇʀ ᴘᴀꜱꜱɪɴɢ ᴛʜᴇ ᴀᴅ.</blockquote></i>
+                    
+                    ᴄʟɪᴄᴋ ᴏɴ "🪄 ɢᴇᴛ ʏᴏᴜʀ ᴛᴏᴋᴇɴ 🪄" ʙᴜᴛᴛᴏɴ ᴀᴄᴄᴇꜱꜱ ʏᴏᴜʀ ʟɪɴᴋ.</b>""",
+                    protect_content=True,
+                    reply_markup=InlineKeyboardMarkup(btn)
+                )
             return
         try:
             msg = await client.send_cached_media(
@@ -292,15 +302,20 @@ async def start(client, message):
         f_caption = f"{files.file_name}"
     if not await check_verification(client, message.from_user.id) and VERIFY_MODE == True:
         btn = [[
-            InlineKeyboardButton("Verify", url=await get_token(client, message.from_user.id, f"https://telegram.me/{username}?start="))
-        ],[
-            InlineKeyboardButton("How To Open Link & Verify", url=VERIFY_TUTORIAL)
-        ]]
-        await message.reply_text(
-            text="<b>You are not verified !\nKindly verify to continue !</b>",
-            protect_content=True,
-            reply_markup=InlineKeyboardMarkup(btn)
-        )
+                    InlineKeyboardButton("🪄 ɢᴇᴛ ʏᴏᴜʀ ᴛᴏᴋᴇɴ 🪄", url=await get_token(client, message.from_user.id, f"https://telegram.me/{username}?start="))
+                ],[
+                    InlineKeyboardButton("🌟 ᴛᴜᴛᴏʀɪᴀʟ 🌟", url=VERIFY_TUTORIAL)
+                ]]
+                await message.reply_text(
+                    text="""<b><i>💢 ʏᴏᴜʀ ᴀᴅꜱ ᴛᴏᴋᴇɴ ɪꜱ ᴇxᴘɪʀᴇᴅ, ʀᴇꜰʀᴇꜱʜ ʏᴏᴜʀ ᴛᴏᴋᴇɴ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ.
+                    ⏳ ᴛᴏᴋᴇɴ ᴛɪᴍᴇᴏᴜᴛ: 1 ᴅᴀʏ 
+                    <blockquote>ᴡʜᴀᴛ ɪꜱ ᴛʜᴇ ᴛᴏᴋᴇɴ? 
+                    ᴛʜɪꜱ ɪꜱ ᴀɴ ᴀᴅꜱ ᴛᴏᴋᴇɴ. ɪꜰ ʏᴏᴜ ᴘᴀꜱꜱ 1 ᴀᴅ, ʏᴏᴜ ᴄᴀɴ ᴜꜱᴇ ᴛʜᴇ ʙᴏᴛ ꜰᴏʀ 24 ʜᴏᴜʀ ᴀꜰᴛᴇʀ ᴘᴀꜱꜱɪɴɢ ᴛʜᴇ ᴀᴅ.</blockquote></i>
+                    
+                    ᴄʟɪᴄᴋ ᴏɴ "🪄 ɢᴇᴛ ʏᴏᴜʀ ᴛᴏᴋᴇɴ 🪄" ʙᴜᴛᴛᴏɴ ᴀᴄᴄᴇꜱꜱ ʏᴏᴜʀ ʟɪɴᴋ.</b>""",
+                    protect_content=True,
+                    reply_markup=InlineKeyboardMarkup(btn)
+                )
         return
     x = await client.send_cached_media(
         chat_id=message.from_user.id,
