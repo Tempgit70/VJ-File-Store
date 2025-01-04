@@ -57,7 +57,7 @@ async def start(client, message):
             InlineKeyboardButton('✗ ʜᴇʟᴘ ✗', callback_data='help')
             ],[
             InlineKeyboardButton('◈ ᴜᴘᴅᴀᴛᴇꜱ ◈', url='https://t.me/magic_botz'),
-            InlineKeyboardButton('ᴍᴏᴠɪᴇꜱ ɢʀᴏᴜᴘ 🎥', url='https://t.me/+XlwpHPfxD8tmM2Vl')
+            InlineKeyboardButton('ɢᴇᴛ ᴘʀᴇᴍɪᴜᴍ', url='https://t.me/+XlwpHPfxD8tmM2Vl')
         ]]
         if CLONE_MODE == True:
             buttons.append([InlineKeyboardButton('🤖 ᴄʀᴇᴀᴛᴇ ʏᴏᴜʀ ᴏᴡɴ ᴄʟᴏɴᴇ ʙᴏᴛ', callback_data='clone')])
@@ -91,8 +91,7 @@ async def start(client, message):
         is_valid = await check_token(client, userid, token)
         if is_valid == True:
             await message.reply_text(
-                text="<b>ʜᴇʏ ʙᴀʙʏ {message.from_user.mention} 😍,/n<blockquote>ʏᴏᴜ ᴀʀᴇ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ᴠᴇʀɪꜰɪᴇᴅ !⚡</blockquote>
-                ɴᴏᴡ ʏᴏᴜ ʜᴀᴠᴇ ᴜɴʟɪᴍɪᴛᴇᴅ ᴀᴄᴄᴇꜱꜱ ꜰᴏʀ ᴀʟʟ ꜰɪʟᴇꜱ ᴛɪʟʟ ᴛᴏᴅᴀʏ ᴍɪᴅɴɪɢʜᴛ.</b>",
+                text="<b>ʜᴇʏ ʙᴀʙʏ {message.from_user.mention} 😍,/n<blockquote>ʏᴏᴜ ᴀʀᴇ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ᴠᴇʀɪꜰɪᴇᴅ !⚡</blockquote> ɴᴏᴡ ʏᴏᴜ ʜᴀᴠᴇ ᴜɴʟɪᴍɪᴛᴇᴅ ᴀᴄᴄᴇꜱꜱ ꜰᴏʀ ᴀʟʟ ꜰɪʟᴇꜱ ᴛɪʟʟ ᴛᴏᴅᴀʏ ᴍɪᴅɴɪɢʜᴛ.</b>",
                 protect_content=True
             )
             await verify_user(client, userid, token)
@@ -384,8 +383,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.message.delete()
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('Hᴏᴍᴇ', callback_data='start'),
-            InlineKeyboardButton('🔒 Cʟᴏsᴇ', callback_data='close_data')
+            InlineKeyboardButton('⇋ ʜᴏᴍᴇ ⇋', callback_data='start'),
+            InlineKeyboardButton('⊗ ᴄʟᴏꜱᴇ ⊗', callback_data='close_data')
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
@@ -409,7 +408,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('✗ ʜᴇʟᴘ ✗', callback_data='help')
             ],[
             InlineKeyboardButton('◈ ᴜᴘᴅᴀᴛᴇꜱ ◈', url='https://t.me/magic_botz'),
-            InlineKeyboardButton('💸 ɢᴇᴛ ᴘʀᴇᴍɪᴜᴍ 💸', callback_data='premium')
+            InlineKeyboardButton('〆 ᴍᴏᴠɪᴇꜱ ɢʀᴏᴜᴘ 〆', url='https://t.me/+XlwpHPfxD8tmM2Vl')
         ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -431,8 +430,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
     
     elif query.data == "clone":
         buttons = [[
-            InlineKeyboardButton('Hᴏᴍᴇ', callback_data='start'),
-            InlineKeyboardButton('🔒 Cʟᴏsᴇ', callback_data='close_data')
+            InlineKeyboardButton('⇋ ʜᴏᴍᴇ ⇋', callback_data='start'),
+            InlineKeyboardButton('⊗ ᴄʟᴏꜱᴇ ⊗', callback_data='close_data')
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
@@ -452,8 +451,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
     
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('Hᴏᴍᴇ', callback_data='start'),
-            InlineKeyboardButton('🔒 Cʟᴏsᴇ', callback_data='close_data')
+            InlineKeyboardButton('⇋ ʜᴏᴍᴇ ⇋', callback_data='start'),
+            InlineKeyboardButton('⊗ ᴄʟᴏꜱᴇ ⊗', callback_data='close_data')
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
@@ -466,6 +465,23 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )  
+
+        elif query.data == "premium":
+        buttons = [[
+            InlineKeyboardButton('⇋ ʜᴏᴍᴇ ⇋', callback_data='start'),
+            InlineKeyboardButton('⊗ ᴄʟᴏꜱᴇ ⊗', callback_data='close_data')
+        ]]
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.PREMIUM_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
 
 # Don't Remove Credit Tg - @VJ_Botz
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
