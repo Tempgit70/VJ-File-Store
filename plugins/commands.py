@@ -214,7 +214,7 @@ async def start(client, message):
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
 # Ask Doubt on telegram @KingVJ01
 
-    files_ = await get_file_details(file_id)           
+     files_ = await get_file_details(file_id)           
     if not files_:
         pre, file_id = ((base64.urlsafe_b64decode(data + "=" * (-len(data) % 4))).decode("ascii")).split("_", 1)
         if not await check_verification(client, message.from_user.id) and VERIFY_MODE == True:
@@ -223,25 +223,6 @@ async def start(client, message):
                 ],[
                     InlineKeyboardButton("🌟 ᴛᴜᴛᴏʀɪᴀʟ 🌟", url=VERIFY_TUTORIAL)
                 ]]
-                await message.reply_text(
-                    text="from telegram import InlineKeyboardButton, InlineKeyboardMarkup
-
-# Make sure `username` and `VERIFY_MODE` are properly defined
-# Example:
-# username = "your_username"  # Replace with the actual username
-# VERIFY_MODE = True  # Ensure this is set to either True or False based on your requirement
-
-if not await check_verification(client, message.from_user.id) and VERIFY_MODE:
-    btn = [
-        [
-            InlineKeyboardButton("🪄 ɢᴇᴛ ʏᴏᴜʀ ᴛᴏᴋᴇɴ 🪄", 
-                                 url=await get_token(client, message.from_user.id, f"https://telegram.me/{username}?start="))
-        ],
-        [
-            InlineKeyboardButton("🌟 ᴛᴜᴛᴏʀɪᴀʟ 🌟", url=VERIFY_TUTORIAL)
-        ]
-    ]
-
     await message.reply_text(
         text=("<b><i>ʙᴀʙʏ 🥺 ɪ ᴛʜɪɴᴋ ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴛᴏᴋᴇɴ ᴏʀ ᴇxᴘɪʀᴇᴅ. \n⏳ ᴛᴏᴋᴇɴ ᴛɪᴍᴇʟɪɴᴇ :- 1 ᴅᴀʏ \n<blockquote> \n 🤨 ᴡʜᴀᴛ ɪꜱ ᴛʜᴇ ᴛᴏᴋᴇɴ? \nᴛʜɪꜱ ɪꜱ ᴀɴ ᴀᴅꜱ ᴛᴏᴋᴇɴ. ɪꜰ ʏᴏᴜ ᴘᴀꜱꜱ 1 ᴀᴅ, ʏᴏᴜ ᴄᴀɴ ᴜꜱᴇ ᴛʜᴇ ʙᴏᴛ ꜰᴏʀ 24 ʜᴏᴜʀ ᴀꜰᴛᴇʀ ᴘᴀꜱꜱɪɴɢ ᴛʜᴇ ᴀᴅ.</blockquote></i> \nᴄʟɪᴄᴋ ᴏɴ <u>🪄 ɢᴇᴛ ʏᴏᴜʀ ᴛᴏᴋᴇɴ 🪄</u> ʙᴜᴛᴛᴏɴ ᴀᴄᴄᴇꜱꜱ ʏᴏᴜʀ ʟɪɴᴋ.</b>",
                     protect_content=True,
