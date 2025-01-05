@@ -228,8 +228,7 @@ async def start(client, message):
                 ],[
                     InlineKeyboardButton("🌟 ᴛᴜᴛᴏʀɪᴀʟ 🌟", url=VERIFY_TUTORIAL)
                 ]]
-                
-            await message.reply_text(
+                await message.reply_text(
                     text="""<b><i>💢 ʏᴏᴜʀ ᴀᴅꜱ ᴛᴏᴋᴇɴ ɪꜱ ᴇxᴘɪʀᴇᴅ, ʀᴇꜰʀᴇꜱʜ ʏᴏᴜʀ ᴛᴏᴋᴇɴ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ.
                     ⏳ ᴛᴏᴋᴇɴ ᴛɪᴍᴇᴏᴜᴛ: 1 ᴅᴀʏ 
                     <blockquote>ᴡʜᴀᴛ ɪꜱ ᴛʜᴇ ᴛᴏᴋᴇɴ? 
@@ -308,7 +307,7 @@ async def start(client, message):
                     InlineKeyboardButton("🌟 ᴛᴜᴛᴏʀɪᴀʟ 🌟", url=VERIFY_TUTORIAL)
                 ]]
                 await message.reply_text(
-            text="<b>You are not verified !\nKindly verify to continue !</b>",
+            text="""<b>ʏᴏᴜʀ ᴀᴅꜱ ᴛᴏᴋᴇɴ ɪꜱ ᴇxᴘɪʀᴇᴅ, ʀᴇꜰʀᴇꜱʜ ʏᴏᴜʀ ᴛᴏᴋᴇɴ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ.⏳ ᴛᴏᴋᴇɴ ᴛɪᴍᴇᴏᴜᴛ: 1 ᴅᴀʏ <blockquote>ᴡʜᴀᴛ ɪꜱ ᴛʜᴇ ᴛᴏᴋᴇɴ? ᴛʜɪꜱ ɪꜱ ᴀɴ ᴀᴅꜱ ᴛᴏᴋᴇɴ. ɪꜰ ʏᴏᴜ ᴘᴀꜱꜱ 1 ᴀᴅ, ʏᴏᴜ ᴄᴀɴ ᴜꜱᴇ ᴛʜᴇ ʙᴏᴛ ꜰᴏʀ 24 ʜᴏᴜʀ ᴀꜰᴛᴇʀ ᴘᴀꜱꜱɪɴɢ ᴛʜᴇ ᴀᴅ.ᴄʟɪᴄᴋ ᴏɴ 🪄 ɢᴇᴛ ʏᴏᴜʀ ᴛᴏᴋᴇɴ 🪄 ʙᴜᴛᴛᴏɴ ᴀᴄᴄᴇꜱꜱ ʏᴏᴜʀ ʟɪɴᴋ. </b>""",
             protect_content=True,
             reply_markup=InlineKeyboardMarkup(btn)
         )
