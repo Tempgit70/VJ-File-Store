@@ -109,9 +109,9 @@ async def start(client, message):
                     InlineKeyboardButton("🌟 ᴛᴜᴛᴏʀɪᴀʟ 🌟", url=VERIFY_TUTORIAL)
                 ]]
                 await message.reply_text(
-                    text=("<b><i>ʙᴀʙʏ 🥺 ɪ ᴛʜɪɴᴋ ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴛᴏᴋᴇɴ ᴏʀ ᴇxᴘɪʀᴇᴅ. \n⏳ ᴛᴏᴋᴇɴ ᴛɪᴍᴇʟɪɴᴇ :- 1 ᴅᴀʏ \n<blockquote> \n 🤨 ᴡʜᴀᴛ ɪꜱ ᴛʜᴇ ᴛᴏᴋᴇɴ? \nᴛʜɪꜱ ɪꜱ ᴀɴ ᴀᴅꜱ ᴛᴏᴋᴇɴ. ɪꜰ ʏᴏᴜ ᴘᴀꜱꜱ 1 ᴀᴅ, ʏᴏᴜ ᴄᴀɴ ᴜꜱᴇ ᴛʜᴇ ʙᴏᴛ ꜰᴏʀ 24 ʜᴏᴜʀ ᴀꜰᴛᴇʀ ᴘᴀꜱꜱɪɴɢ ᴛʜᴇ ᴀᴅ.</blockquote></i> \nᴄʟɪᴄᴋ ᴏɴ <u>🪄 ɢᴇᴛ ʏᴏᴜʀ ᴛᴏᴋᴇɴ 🪄</u> ʙᴜᴛᴛᴏɴ ᴀᴄᴄᴇꜱꜱ ʏᴏᴜʀ ʟɪɴᴋ.</b>",
-                          protect_content=True,
-                reply_markup=InlineKeyboardMarkup(btn)
+                    text="<b><i>ʙᴀʙʏ 🥺 ɪ ᴛʜɪɴᴋ ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴛᴏᴋᴇɴ ᴏʀ ᴇxᴘɪʀᴇᴅ. \n⏳ ᴛᴏᴋᴇɴ ᴛɪᴍᴇʟɪɴᴇ :- 1 ᴅᴀʏ \n<blockquote> \n 🤨 ᴡʜᴀᴛ ɪꜱ ᴛʜᴇ ᴛᴏᴋᴇɴ? \nᴛʜɪꜱ ɪꜱ ᴀɴ ᴀᴅꜱ ᴛᴏᴋᴇɴ. ɪꜰ ʏᴏᴜ ᴘᴀꜱꜱ 1 ᴀᴅ, ʏᴏᴜ ᴄᴀɴ ᴜꜱᴇ ᴛʜᴇ ʙᴏᴛ ꜰᴏʀ 24 ʜᴏᴜʀ ᴀꜰᴛᴇʀ ᴘᴀꜱꜱɪɴɢ ᴛʜᴇ ᴀᴅ.</blockquote></i> \nᴄʟɪᴄᴋ ᴏɴ <u>🪄 ɢᴇᴛ ʏᴏᴜʀ ᴛᴏᴋᴇɴ 🪄</u> ʙᴜᴛᴛᴏɴ ᴀᴄᴄᴇꜱꜱ ʏᴏᴜʀ ʟɪɴᴋ.</b>",
+                    protect_content=True,
+                    reply_markup=InlineKeyboardMarkup(btn)
                 )
                 return
         except Exception as e:
