@@ -259,17 +259,15 @@ if not await check_verification(client, message.from_user.id) and VERIFY_MODE ==
                 )
                 if AUTO_DELETE_MODE == True:
                     k = await client.send_message(chat_id = message.from_user.id, text=f"<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nThis Movie File/Video will be deleted in <b><u>{AUTO_DELETE} minutes</u> 🫥 <i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Please forward this File/Video to your Saved Messages and Start Download there</b>")
-                    await asyncio.sleep(AUTO_DELETE_TIME)
-                    try:
-                        await msg.delete()
-                        except:
-                            pass
-                            await g.delete()
-                            await k.edit_text("<b>Your File/Video is successfully deleted!!!</b>")
-                            return
-                        except:
-                            pass
-                            return await message.reply('No such file exist.')
+            await asyncio.sleep(AUTO_DELETE_TIME)
+            try:
+                await del_msg.delete()
+            except:
+                pass
+            await k.edit_text("<b>Your File/Video is successfully deleted!!!</b>")
+        return
+    except:
+        pass
 
 # Don't Remove Credit Tg - @VJ_Botz
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
