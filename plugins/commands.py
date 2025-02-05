@@ -271,7 +271,7 @@ if not await check_verification(client, message.from_user.id) and VERIFY_MODE ==
                         pass
                         return await message.reply('No such file exist.')
                     
-@Client.on_message(filters.command("api") & filters.private)
+@Client.on_message(filters.command('api') & filters.private)
 async def shortener_api_handler(client, m: Message):
         user_id = m.from_user.id
         user = await get_user(user_id)
