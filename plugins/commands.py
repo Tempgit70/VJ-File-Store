@@ -275,59 +275,6 @@ if not await check_verification(client, message.from_user.id) and VERIFY_MODE ==
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
 # Ask Doubt on telegram @KingVJ01
 
-files = files_[0]
-title = files.file_name
-size=get_size(files.file_size)
-f_caption=files.caption
-if CUSTOM_FILE_CAPTION:
-    try:
-        f_caption=CUSTOM_FILE_CAPTION.format(file_name= '' if title is None else title, file_size='' if size is None else size, file_caption='' if f_caption is None else f_caption)
-    except Exception as e:
-        logger.exception(e)
-        f_caption=f_caption
-        if f_caption is None:
-            f_caption = f"{files.file_name}"
-            if not await check_verification(client, message.from_user.id) and VERIFY_MODE == True:
-                btn = [[
-                    InlineKeyboardButton("🪄 ɢᴇᴛ ʏᴏᴜʀ ᴛᴏᴋᴇɴ 🪄", url=await get_token(client, message.from_user.id, f"https://telegram.me/{username}?start="))
-                ],[
-                    InlineKeyboardButton("🌟 ᴛᴜᴛᴏʀɪᴀʟ 🌟", url=VERIFY_TUTORIAL)
-                ]]
-                await message.reply_text(
-                    text="<b><i>ʙᴀʙʏ 🥺 ɪ ᴛʜɪɴᴋ ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴛᴏᴋᴇɴ ᴏʀ ᴇxᴘɪʀᴇᴅ. \n⏳ ᴛᴏᴋᴇɴ ᴛɪᴍᴇʟɪɴᴇ :- 1 ᴅᴀʏ \n<blockquote> \n 🤨 ᴡʜᴀᴛ ɪꜱ ᴛʜᴇ ᴛᴏᴋᴇɴ? \nᴛʜɪꜱ ɪꜱ ᴀɴ ᴀᴅꜱ ᴛᴏᴋᴇɴ. ɪꜰ ʏᴏᴜ ᴘᴀꜱꜱ 1 ᴀᴅ, ʏᴏᴜ ᴄᴀɴ ᴜꜱᴇ ᴛʜᴇ ʙᴏᴛ ꜰᴏʀ 24 ʜᴏᴜʀ ᴀꜰᴛᴇʀ ᴘᴀꜱꜱɪɴɢ ᴛʜᴇ ᴀᴅ.</blockquote></i> \nᴄʟɪᴄᴋ ᴏɴ <u>🪄 ɢᴇᴛ ʏᴏᴜʀ ᴛᴏᴋᴇɴ 🪄</u> ʙᴜᴛᴛᴏɴ ᴀᴄᴄᴇꜱꜱ ʏᴏᴜʀ ʟɪɴᴋ.</b>",
-                    protect_content=True,
-                    reply_markup=InlineKeyboardMarkup(btn)
-                )
-                return
-                x = await client.send_cached_media(
-                    chat_id=message.from_user.id,
-                    file_id=file_id,
-                    caption=f_caption,
-                    protect_content=True if pre == 'filep' else False,
-                )
-                if STREAM_MODE == True:
-                    g = await x.reply_text(
-                        text=f"**•• ʏᴏᴜ ᴄᴀɴ ɢᴇɴᴇʀᴀᴛᴇ ᴏɴʟɪɴᴇ sᴛʀᴇᴀᴍ ʟɪɴᴋ ᴏғ ʏᴏᴜʀ ғɪʟᴇ ᴀɴᴅ ᴀʟsᴏ ғᴀsᴛ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ ғᴏʀ ʏᴏᴜʀ ғɪʟᴇ ᴄʟɪᴄᴋɪɴɢ ᴏɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ 👇**",
-                        quote=True,
-                        disable_web_page_preview=True,
-                        reply_markup=InlineKeyboardMarkup(
-                            [
-                                [
-                                    InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}')
-                                ]
-                            ]
-                        )
-                    )
-                    if AUTO_DELETE_MODE == True:
-                        k = await client.send_message(chat_id = message.from_user.id, text=f"<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nThis Movie File/Video will be deleted in <b><u>{AUTO_DELETE} minutes</u> 🫥 <i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Please forward this File/Video to your Saved Messages and Start Download there</b>")
-                        await asyncio.sleep(AUTO_DELETE_TIME)
-                        try:
-                            await x.delete()
-                        except:
-                            pass
-                            await k.edit_text("<b>Your All Files/Videos is successfully deleted!!!</b>")       
-        
-
 # Don't Remove Credit Tg - @VJ_Botz
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
 # Ask Doubt on telegram @KingVJ01
