@@ -270,7 +270,14 @@ if not await check_verification(client, message.from_user.id) and VERIFY_MODE ==
                     except:
                         pass
                         return await message.reply('No such file exist.')
-                        
+
+
+
+# Don't Remove Credit Tg - @VJ_Botz
+# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
+# Ask Doubt on telegram @KingVJ
+
+
 @Client.on_message(filters.command('api') & filters.private)
 async def shortener_api_handler(client, m: Message):
     user_id = m.from_user.id
