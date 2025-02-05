@@ -272,7 +272,7 @@ if not await check_verification(client, message.from_user.id) and VERIFY_MODE ==
                         return await message.reply('No such file exist.')
                     
 @Client.on_message(filters.command("api") & filters.private)
-    async def shortener_api_handler(client, m: Message):
+async def shortener_api_handler(client, m: Message):
         user_id = m.from_user.id
         user = await get_user(user_id)
         cmd = m.command
@@ -341,7 +341,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('✗ ʜᴇʟᴘ ✗', callback_data='help')
+            InlineKeyboardButton('〆 ʜᴇʟᴘ 〆', callback_data='help')
             ],[
             InlineKeyboardButton('◈ ᴜᴘᴅᴀᴛᴇꜱ ◈', url='https://t.me/magic_botz'),
             InlineKeyboardButton('ɢᴇᴛ ᴘʀᴇᴍɪᴜᴍ', callback_data='premium')
